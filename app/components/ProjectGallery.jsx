@@ -4,19 +4,19 @@ import { useState } from "react";
 
 const images = [
   {
-    src: "/images/gallery1.webp",
+    src: "https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     label: "CLUBHOUSE AMENITIES",
   },
   {
-    src: "/images/gallery2.webp",
+    src: "https://images.unsplash.com/photo-1723110994499-df46435aa4b3?q=80&w=1179&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     label: "LIFEDESIGNED® RESIDENCES",
   },
   {
-    src: "/images/gallery3.webp",
+    src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     label: "SMART AND SECURE HOMES",
   },
   {
-    src: "/images/gallery4.webp",
+    src: "https://plus.unsplash.com/premium_photo-1734543932576-2d8c6b6233c6?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     label: "LANDSCAPED GREENS",
   },
 ];

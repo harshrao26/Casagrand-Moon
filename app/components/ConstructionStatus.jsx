@@ -4,17 +4,17 @@ import { useEffect, useRef, useState } from "react";
 
 const slides = [
   {
-    img: "/images/construction1.webp",
+    img: "https://images.unsplash.com/photo-1647579350413-a6ada4e480ed?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "22/12/2023",
     text: "B1 - Finishing under progress",
   },
   {
-    img: "/images/construction2.webp",
+    img: "https://plus.unsplash.com/premium_photo-1661954372617-15780178eb2e?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "10/01/2024",
     text: "Structure completed",
   },
   {
-    img: "/images/construction3.webp",
+    img: "https://images.unsplash.com/photo-1756435292384-1bf32eff7baf?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "05/02/2024",
     text: "Interior work ongoing",
   },

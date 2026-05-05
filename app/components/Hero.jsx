@@ -45,7 +45,7 @@ export default function HeroSection() {
   const ActiveIcon = stats[active].icon;
 
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden">
+    <section className="relative h-[80vh] md:h-[90vh] bg-black overflow-hidden">
 
       {/* Background */}
       <img

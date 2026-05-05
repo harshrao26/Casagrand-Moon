@@ -103,30 +103,23 @@ export default function Header() {
             aria-label="Close menu overlay"
           />
 
-          <aside className="absolute right-3 top-3 flex h-[calc(100vh-24px)] w-[min(410px,calc(100vw-24px))] flex-col overflow-hidden rounded-[26px] bg-[#fbf7ef] shadow-[-24px_24px_80px_rgba(0,0,0,0.28)]">
-            <div className="flex items-center justify-between border-b border-black/5 px-5 py-4">
+          <aside className="absolute right-3 top-3 flex h-[calc(100vh-24px)] w-[min(410px,calc(100vw-24px))] flex-col overflow-hidden rounded-[26px] bg-white shadow-[-24px_24px_80px_rgba(0,0,0,0.28)]">
+            <div className="flex items-center justify-between   px-5 py-4">
               <a
                 href="#home"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-3"
                 aria-label="Birla Alokya Home"
               >
-                <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white ring-1 ring-black/5">
+                <span className="grid   place-items-center rounded-2xl bg-white ring-1 ring-black/5">
                   <img
-                    src="/images/birla-alokya-logo.webp"
+                    src="/logo.png"
                     alt="Birla Alokya"
-                    className="h-9 w-auto object-contain"
+                    className=" h-9  object-contain"
                   />
                 </span>
 
-                <span className="leading-none">
-                  <span className="block text-[12px] font-semibold tracking-[-0.02em] text-[#241812]">
-                    Birla Alokya
-                  </span>
-                  <span className="mt-1 block text-[8px] font-medium uppercase tracking-[0.16em] text-[#8b7b65]">
-                    Whitefield
-                  </span>
-                </span>
+                 
               </a>
 
               <button

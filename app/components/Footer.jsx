@@ -41,13 +41,13 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Social Icons */}
-          {/* <div className="flex gap-4">
-            <Youtube className="h-5 w-5 cursor-pointer hover:text-black transition" />
-            <X className="h-5 w-5 cursor-pointer hover:text-black transition" />
-            <Linkedin className="h-5 w-5 cursor-pointer hover:text-black transition" />
-            <Instagram className="h-5 w-5 cursor-pointer hover:text-black transition" />
-          </div> */}
+          <div className="pt-10 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center text-zinc-500 text-sm">
+          <p>© 2026 Casagrand Builder Pvt. Ltd. All rights reserved.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="https://www.casagrand.co.in/new-privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="https://www.casagrand.co.in/terms-and-condition/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms & Conditions</a>
+          </div>
+        </div>
         </div>
 
         {/* Bottom Text */}
@@ -64,6 +64,13 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
+       <p className='text-xs text-zinc-500 text-center max-w-4xl mx-auto mt-10 pb-2'>
+*Disclaimer: The information provided on this website is for general informational purposes only. All renderings, floor plans, and maps are artist&apos;s conceptions and not actual depictions of the building or its surroundings. Prices and availability are subject to change without notice. Please verify all details with our sales team before making a purchase.
+
+
+ 
+      </p>
     </footer>
   );
 }

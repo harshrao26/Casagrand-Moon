@@ -22,7 +22,7 @@ const stats = [
   {
     icon: Sofa,
     label: "Configuration",
-    value: "1, 2 & 3 BHK Apartments",
+    value: " 2 & 3 BHK Apartments",
   },
 ];
 
@@ -54,14 +54,14 @@ export default function HeroSection() {
       {/* Center Content */}
       <div className="relative z-10 mx-auto flex min-h-full max-w-7xl flex-col items-center justify-center px-4 pb-36 pt-24 text-center sm:px-6 lg:pb-28">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[2px] text-white backdrop-blur-xl sm:text-xs">
-          <MapPin className="h-3.5 w-3.5 text-[#FCB33A]" />
+          <MapPin className="h-3.5 w-3.5 text-[#BD9E5A]" />
           Kumbalgodu, Off Mysore Road
         </div>
 
         <h1 className="max-w-4xl text-3xl font-semibold leading-[1.12] tracking-tight text-white sm:text-4xl md:text-6xl lg:text-7xl">
           Casagrand Moondance
-          <span className="mt-2 block text-[#FCB33A]">
-            1, 2 & 3 BHK Premium Apartments
+          <span className="mt-2 block text-[#]">
+             2 & 3 BHK Premium Apartments
           </span>
         </h1>
 
@@ -72,7 +72,7 @@ export default function HeroSection() {
         </p> */}
 
         <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row">
-          <button className="rounded-full bg-[#FCB33A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-white sm:px-8 sm:py-4">
+          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-white sm:px-8 sm:py-4">
             Enquire Now
           </button>
 
@@ -90,7 +90,7 @@ export default function HeroSection() {
               key={label}
               className="flex items-center gap-4 border-r border-white/10 last:border-r-0"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FCB33A]/15 text-[#FCB33A]">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#BD9E5A]/15 text-[#BD9E5A]">
                 <Icon className="h-5 w-5" />
               </div>
 
@@ -110,7 +110,7 @@ export default function HeroSection() {
       {/* Mobile Rotating Stat */}
       <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-white/10 bg-black/75 px-4 py-5 text-center text-white backdrop-blur-xl lg:hidden">
         <div className="flex flex-col items-center">
-          <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#FCB33A]/15 text-[#FCB33A]">
+          <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#BD9E5A]/15 text-[#BD9E5A]">
             <ActiveIcon className="h-6 w-6" />
           </div>
 
@@ -131,7 +131,7 @@ export default function HeroSection() {
               type="button"
               onClick={() => setActive(i)}
               className={`h-2 rounded-full transition-all ${
-                active === i ? "w-6 bg-[#FCB33A]" : "w-2 bg-white/35"
+                active === i ? "w-6 bg-[#BD9E5A]" : "w-2 bg-white/35"
               }`}
               aria-label={`Show stat ${i + 1}`}
             />

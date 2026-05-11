@@ -5,7 +5,7 @@ export default function SustainabilitySection() {
     <section className="bg-[#f5f5f5] px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
       {/* Heading */}
       <div className="mx-auto mb-10 max-w-3xl text-center">
-        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
           Greener Living
         </p>
 
@@ -35,7 +35,7 @@ export default function SustainabilitySection() {
 
         {/* Overlay Card */}
         <div className="absolute inset-x-4 bottom-4 rounded-[24px] bg-white p-5 shadow-xl sm:bottom-8 sm:left-8 sm:right-auto sm:max-w-md sm:p-8 lg:left-10 lg:bottom-10">
-          <p className="mb-3 text-[10px] font-bold uppercase tracking-[2px] text-[#FCB33A] sm:text-xs">
+          <p className="mb-3 text-[10px] font-bold uppercase tracking-[2px] text-[#BD9E5A] sm:text-xs">
             Casagrand Moondance
           </p>
 
@@ -57,7 +57,7 @@ export default function SustainabilitySection() {
           </p>
 
           {/* Button */}
-          <button className="mt-6 flex items-center gap-2 rounded-full bg-[#FCB33A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-black transition hover:bg-black hover:text-white sm:text-sm">
+          <button className="mt-6 flex items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-black transition hover:bg-black hover:text-white sm:text-sm">
             Know More →
           </button>
         </div>

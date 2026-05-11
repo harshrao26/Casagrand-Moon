@@ -70,7 +70,7 @@ export default function AmenitiesSection() {
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mx-auto mb-10 max-w-3xl text-center">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
             Lifestyle Amenities
           </p>
 
@@ -95,7 +95,7 @@ export default function AmenitiesSection() {
               >
                 {slide.map(({ icon: Icon, label }) => (
                   <div key={label} className="flex flex-col items-center">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-[#FCB33A] shadow-sm">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-[#BD9E5A] shadow-sm">
                       <Icon className="h-7 w-7" />
                     </div>
 
@@ -116,7 +116,7 @@ export default function AmenitiesSection() {
               key={label}
               className="group flex min-h-[170px] flex-col items-center justify-center border-b border-r border-black/10 px-6 py-8 text-center transition hover:bg-white"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#FCB33A] shadow-sm transition group-hover:scale-110 group-hover:bg-[#FCB33A] group-hover:text-black">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[#BD9E5A] shadow-sm transition group-hover:scale-110 group-hover:bg-[#BD9E5A] group-hover:text-black">
                 <Icon className="h-8 w-8" />
               </div>
 
@@ -128,7 +128,7 @@ export default function AmenitiesSection() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <button className="rounded-full bg-[#FCB33A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
+          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
             Download Brochure
           </button>
         </div>

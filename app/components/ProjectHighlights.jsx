@@ -33,7 +33,7 @@ export default function ProjectHighlights() {
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
             Casagrand Moondance
           </p>
 

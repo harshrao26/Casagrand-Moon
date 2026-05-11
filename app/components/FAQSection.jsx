@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "What apartment configurations are available at Casagrand Moondance?",
-    a: "The project offers spacious 1, 2 & 3 BHK apartments designed for different family needs, from compact homes to larger premium residences.",
+    a: "The project offers spacious 2 & 3 BHK apartments designed for different family needs, from compact homes to larger premium residences.",
   },
   {
     q: "Where is Casagrand Moondance located?",
@@ -41,7 +41,7 @@ export default function FAQSection() {
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
       {/* Heading */}
       <div className="mx-auto mb-10 max-w-3xl text-center">
-        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
           Frequently Asked Questions
         </p>
 
@@ -75,7 +75,7 @@ export default function FAQSection() {
                 <div
                   className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition ${
                     isOpen
-                      ? "bg-[#FCB33A] text-black"
+                      ? "bg-[#BD9E5A] text-black"
                       : "bg-black/5 text-black"
                   }`}
                 >

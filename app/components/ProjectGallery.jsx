@@ -29,7 +29,7 @@ export default function ProjectGallery() {
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-10">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
             Project Gallery
           </p>
 
@@ -100,7 +100,7 @@ export default function ProjectGallery() {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <button className="rounded-full bg-[#FCB33A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
+          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
             Download Brochure
           </button>
         </div>

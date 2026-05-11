@@ -19,7 +19,7 @@ export default function ContactForm() {
       <div className="mx-auto max-w-5xl">
         {/* Heading */}
         <div className="mx-auto mb-8 max-w-3xl text-center text-white">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
             Enquire Now
           </p>
 
@@ -97,7 +97,7 @@ export default function ContactForm() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-[#FCB33A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-black transition hover:bg-white"
+              className="bg-[#BD9E5A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-black transition hover:bg-white"
             >
               Submit Enquiry
             </button>

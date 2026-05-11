@@ -5,20 +5,20 @@ const About = () => {
     <section className="bg-[#f5f5f5] px-5 py-14 sm:py-16 lg:px-10 lg:py-20">
       <div className="mx-auto max-w-5xl text-center">
         {/* Label */}
-        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
           About Casagrand Moondance
         </p>
 
         {/* Heading */}
         <h2 className="text-[26px] font-semibold leading-snug text-black sm:text-[32px] lg:text-[40px]">
-          1, 2 & 3 BHK Premium Apartments in Kumbalgodu, Off Mysore Road
+          2 & 3 BHK Premium Apartments in Kumbalgodu, Off Mysore Road
         </h2>
 
         {/* Paragraph 1 */}
         <p className="mt-6 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
           Casagrand Moondance is a thoughtfully planned residential community in
           Kumbalgodu, off Mysore Road, Bengaluru. Designed for modern families,
-          the project offers premium 1, 2 & 3 BHK apartments with elegant
+          the project offers premium 2 & 3 BHK apartments with elegant
           layouts, landscaped open spaces, and a peaceful low-rise living
           environment.
         </p>

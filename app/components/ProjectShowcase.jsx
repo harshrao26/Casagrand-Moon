@@ -3,9 +3,24 @@
 import { useEffect, useRef } from "react";
 
 const images = [
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1560448205-17d3a46c84de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "/indoor-images/Copy of c26.jpg",
+  "/indoor-images/Copy of s02.jpg",
+  "/indoor-images/Copy of s03.jpg",
+  "/indoor-images/Copy of s11.jpg",
+  "/indoor-images/Copy of s12.jpg",
+  "/indoor-images/Copy of s14.jpg",
+  "/indoor-images/Copy of s15.jpg",
+  "/indoor-images/Copy of s20.jpg",
+  "/indoor-images/Copy of s21.jpg",
+  "/indoor-images/Copy of s24.jpg",
+  "/indoor-images/Copy of s26.jpg",
+  "/indoor-images/Copy of s27.jpg",
+  "/indoor-images/Copy of s28.jpg",
+  "/indoor-images/Copy of s30.jpg",
+  "/indoor-images/Copy of s31.jpg",
+  "/indoor-images/Copy of s34.jpg",
+  "/indoor-images/Copy of s35.jpg",
+  "/indoor-images/Copy of s36.jpg",
 ];
 
 export default function ProjectShowcase() {
@@ -30,13 +45,13 @@ export default function ProjectShowcase() {
           scrollAmount = 0;
         }, 900);
       }
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="  py-10">
+    <section className="   py-10">
       
       {/* Heading */}
       <h2 className="text-center text-[28px] sm:text-[34px] font-semibold mb-6">
@@ -57,20 +72,12 @@ export default function ProjectShowcase() {
               <img
                 src={img}
                 alt=""
-                className="w-full h-[400px] md:h-[500px] object-cover"
+                className="w-screen   object-cover"
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="bg-black/40 px-6 py-3 text-white text-lg md:text-xl font-medium backdrop-blur-sm">
-                  Select Residences with Sprawling Private Terrace
-                </p>
-              </div>
-
-              {/* Bottom label */}
-              <p className="absolute bottom-3 left-4 text-white/80 text-xs">
-                Artist’s Impression
-              </p>
+               
+              
             </div>
           ))}
         </div>

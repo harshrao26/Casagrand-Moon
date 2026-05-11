@@ -2,40 +2,63 @@
 
 export default function SustainabilitySection() {
   return (
-    <section className="bg-[#f5f5f5] py-10 px-4">
-
+    <section className="bg-[#f5f5f5] px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
       {/* Heading */}
-      <h2 className="text-center text-[28px] sm:text-[34px] font-semibold mb-10">
-        What are we doing for <span className="font-bold">Sustainability</span>
-      </h2>
+      <div className="mx-auto mb-10 max-w-3xl text-center">
+        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+          Greener Living
+        </p>
+
+        <h2 className="text-[28px] font-semibold leading-tight text-black sm:text-[34px] lg:text-[42px]">
+          What are we doing for{" "}
+          <span className="font-bold">Sustainability</span>
+        </h2>
+
+        <p className="mt-4 text-sm leading-7 text-black/65 sm:text-base">
+          Casagrand Moondance is planned as a peaceful low-rise community with
+          open landscapes, mindful living spaces, and features that support a
+          healthier everyday lifestyle.
+        </p>
+      </div>
 
       {/* Wrapper */}
-      <div className="relative max-w-5xl mx-auto h-[380px]">
-
+      <div className="relative mx-auto h-[560px] max-w-6xl overflow-hidden rounded-[30px] shadow-[0_24px_80px_rgba(0,0,0,0.12)] sm:h-[500px] lg:h-[540px]">
         {/* Background Image */}
         <img
-          src="https://images.unsplash.com/photo-1668911494509-14baf3b42fda?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          className="w-full h-full object-cover"
+          src="/indoor-images/Copy of s11.jpg"
+          alt="Sustainable landscaped living at Casagrand Moondance"
+          className="h-full w-full object-cover"
         />
 
-        {/* Overlay Card */}
-        <div className="absolute left-6 bottom-6 sm:left-10 sm:bottom-10 bg-white p-6 sm:p-8 max-w-md shadow-xl">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent sm:bg-gradient-to-r sm:from-black/55 sm:via-black/10 sm:to-transparent" />
 
-          <h3 className="text- font-bold leading-tight">
+        {/* Overlay Card */}
+        <div className="absolute inset-x-4 bottom-4 rounded-[24px] bg-white p-5 shadow-xl sm:bottom-8 sm:left-8 sm:right-auto sm:max-w-md sm:p-8 lg:left-10 lg:bottom-10">
+          <p className="mb-3 text-[10px] font-bold uppercase tracking-[2px] text-[#FCB33A] sm:text-xs">
+            Casagrand Moondance
+          </p>
+
+          <h3 className="text-2xl font-bold leading-tight text-black sm:text-3xl">
             SUSTAINABILITY <br /> ENDEAVOURS
           </h3>
 
-          <p className="mt-4 text-[14px] text-black/70 leading-relaxed">
-            Aims to achieve Green Building Certification (Gold rated) for its entire
-            portfolio. Ambition to actively promote and implement water conservation
-            measures across all projects and operations to reduce environmental
-            footprint and create sustainable living environments.
+          <p className="mt-4 text-[14px] leading-relaxed text-black/70 sm:text-[15px]">
+            Designed across 8.25 acres, Casagrand Moondance brings together
+            landscaped open spaces, low-rise planning, natural light,
+            ventilation, and community areas that encourage balanced and
+            comfortable urban living.
+          </p>
+
+          <p className="mt-3 text-[14px] leading-relaxed text-black/70 sm:text-[15px]">
+            The project focuses on creating a calmer residential environment
+            with open greenery, lifestyle amenities, and thoughtfully planned
+            spaces for families in Kumbalgodu, off Mysore Road.
           </p>
 
           {/* Button */}
-          <button className="mt-6 bg-[#c99b21] text-white px-6 py-3 text-sm tracking-wide flex items-center gap-2 hover:opacity-90 transition">
-            KNOW MORE →
+          <button className="mt-6 flex items-center gap-2 rounded-full bg-[#FCB33A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-black transition hover:bg-black hover:text-white sm:text-sm">
+            Know More →
           </button>
         </div>
       </div>

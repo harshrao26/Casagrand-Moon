@@ -40,8 +40,8 @@ export default function Header() {
         <div
           className={`mx-auto flex max-w-[1380px] items-center justify-between rounded-[22px] border transition-all duration-300 ${
             isScrolled
-              ? "border-black/10 bg-white/90 shadow-[0_18px_50px_rgba(0,0,0,0.12)] backdrop-blur-xl"
-              : "border-white/35 bg-white/80 shadow-[0_12px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl"
+              ? "border-black/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.12)] backdrop-blur-xl"
+              : "border-white/35 bg-white shadow-[0_12px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl"
           } px-4 py-3 sm:px-5 lg:px-6`}
         >
           <a href="#home" className="flex items-center gap-3" aria-label="Birla Alokya Home">

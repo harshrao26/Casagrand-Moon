@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import ProjectShowcase from './components/ProjectShowcase'
@@ -17,17 +16,17 @@ const page = () => {
   return (
     <div>
       
-      <Header/>
       <Hero/>
       <About/>
       <ProjectShowcase/>
+
       <ProjectHighlights/>
       <AmenitiesSection/>
       <ProjectGallery/>
       <LocationHighlights/>
       <VillamentsSection/>
       <SustainabilitySection/>
-      <ConstructionStatus/>
+      {/* <ConstructionStatus/> */}
       <FAQSection/>
       <ContactForm/>
       <Footer/>

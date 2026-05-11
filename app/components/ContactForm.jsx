@@ -10,49 +10,99 @@ export default function ContactForm() {
     consent: false,
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <section className="bg-[#8a0c6b] py-16 px-4 flex justify-center">
+    <section className="bg-[#36295D] px-4 py-14 sm:px-6 sm:py-16 lg:px-10">
+      <div className="mx-auto max-w-5xl">
+        {/* Heading */}
+        <div className="mx-auto mb-8 max-w-3xl text-center text-white">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+            Enquire Now
+          </p>
 
-      <div className="w-full max-w-xl text-white">
+          <h2 className="text-[28px] font-semibold leading-tight sm:text-[34px] lg:text-[42px]">
+            Get Details of Casagrand Moondance
+          </h2>
 
-        {/* Name */}
-        <input
-          type="text"
-          placeholder="*Name"
-          className="w-full py-1 text-sm px-4 bg-white text-black outline-none mb-4"
-        />
-
-        {/* Phone Row */}
-        <div className="flex gap-3 mb-4">
-          
-          <select className="py-1 text-sm px-3 bg-white text-black outline-none w-[40%]">
-            <option>+91 (India)</option>
-            <option>+1 (USA)</option>
-          </select>
-
-          <input
-            type="text"
-            placeholder="*Phone Number"
-            className="flex-1 py-1 text-sm px-4 bg-white text-black outline-none"
-          />
-        </div>
-
-        {/* Checkbox */}
-        <div className="flex items-start gap-2 mb-6">
-          <input type="checkbox" className="mt-1" />
-
-          <p className="text-[13px] leading-snug text-white/90">
-            Opt-in for receiving important information and updates on
-            WhatsApp/Email/SMS/Call*
+          <p className="mt-4 text-sm leading-7 text-white/80 sm:text-base">
+            Share your details to receive pricing, floor plans, brochure,
+            availability, and site visit assistance for Casagrand Moondance,
+            Kumbalgodu, off Mysore Road.
           </p>
         </div>
 
-        {/* Button */}
-        <div className="flex justify-center">
-          <button className="bg-[#c99b21] text-white text-sm px-8 py-2 tracking-wide hover:opacity-90 transition">
-            SUBMIT
-          </button>
-        </div>
+        <form onSubmit={handleSubmit} className="mx-auto w-full max-w-xl text-white">
+          {/* Name */}
+          <input
+            type="text"
+            placeholder="*Name"
+            value={form.name}
+            onChange={(e) =>
+              setForm((prev) => ({ ...prev, name: e.target.value }))
+            }
+            className="mb-4 w-full rounded-none bg-white px-4 py-2.5 text-sm text-black outline-none placeholder:text-black/45"
+            required
+          />
+
+          {/* Phone Row */}
+          <div className="mb-4 flex flex-col gap-3 sm:flex-row">
+            <select
+              value={form.country}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, country: e.target.value }))
+              }
+              className="w-full rounded-none bg-white px-3 py-2.5 text-sm text-black outline-none sm:w-[40%]"
+            >
+              <option>+91 (India)</option>
+              <option>+1 (USA)</option>
+              <option>+44 (UK)</option>
+              <option>+971 (UAE)</option>
+            </select>
+
+            <input
+              type="tel"
+              placeholder="*Phone Number"
+              value={form.phone}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, phone: e.target.value }))
+              }
+              className="flex-1 rounded-none bg-white px-4 py-2.5 text-sm text-black outline-none placeholder:text-black/45"
+              required
+            />
+          </div>
+
+          {/* Checkbox */}
+          <label className="mb-6 flex cursor-pointer items-start gap-2">
+            <input
+              type="checkbox"
+              checked={form.consent}
+              onChange={(e) =>
+                setForm((prev) => ({ ...prev, consent: e.target.checked }))
+              }
+              className="mt-1"
+              required
+            />
+
+            <p className="text-[13px] leading-snug text-white/90">
+              I agree to receive important updates, pricing details, floor plan
+              information, brochure, and site visit assistance for Casagrand
+              Moondance via WhatsApp, Email, SMS, or Call.*
+            </p>
+          </label>
+
+          {/* Button */}
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-[#FCB33A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-black transition hover:bg-white"
+            >
+              Submit Enquiry
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   );

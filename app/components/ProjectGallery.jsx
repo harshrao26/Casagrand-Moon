@@ -4,68 +4,106 @@ import { useState } from "react";
 
 const images = [
   {
-    src: "https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    label: "CLUBHOUSE AMENITIES",
+    src: "/indoor-images/Copy of s03.jpg",
+    label: "PREMIUM APARTMENT LIVING",
   },
   {
-    src: "https://images.unsplash.com/photo-1723110994499-df46435aa4b3?q=80&w=1179&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    label: "LIFEDESIGNED® RESIDENCES",
+    src: "/indoor-images/Copy of s11.jpg",
+    label: "LOW-RISE COMMUNITY DESIGN",
   },
   {
-    src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    label: "SMART AND SECURE HOMES",
+    src: "/indoor-images/Copy of s12.jpg",
+    label: "LANDSCAPED OPEN SPACES",
   },
   {
-    src: "https://plus.unsplash.com/premium_photo-1734543932576-2d8c6b6233c6?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    label: "LANDSCAPED GREENS",
+    src: "/indoor-images/Copy of s14.jpg",
+    label: "MODERN LIFESTYLE AMENITIES",
   },
 ];
 
 export default function ProjectGallery() {
-  const [active, setActive] = useState(2); // default center
+  const [active, setActive] = useState(2);
 
   return (
-    <section className=" py-10">
+    <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
+      <div className="mx-auto max-w-7xl">
+        {/* Heading */}
+        <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-10">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+            Project Gallery
+          </p>
 
-      {/* Heading */}
-      <h2 className="text-center text-black text-[28px] sm:text-[34px] font-semibold mb-6">
-        Project Gallery
-      </h2>
+          <h2 className="text-[28px] font-semibold leading-tight text-black sm:text-[34px] lg:text-[42px]">
+            Explore Casagrand Moondance
+          </h2>
 
-      {/* Gallery */}
-      <div className="flex flex-col md:flex-row h-[200px] md:h-[400px] overflow-hidden">
-        {images.map((item, index) => {
-          const isActive = active === index;
+          <p className="mt-4 text-sm leading-7 text-black/65 sm:text-base">
+            A glimpse of premium apartment living, landscaped surroundings,
+            thoughtfully planned spaces, and modern community experiences at
+            Kumbalgodu, off Mysore Road.
+          </p>
+        </div>
 
-          return (
-            <div
-              key={index}
-              onMouseEnter={() => setActive(index)}
-              className={`relative transition-all duration-500 ease-in-out cursor-pointer ${
-                isActive ? "flex-[3]" : "flex-[1]"
-              }`}
-            >
-              {/* Image */}
-              <img
-                src={item.src}
-                alt=""
-                className="w-full h-full object-cover"
-              />
+        {/* Gallery */}
+        <div className="flex h-[520px] flex-col overflow-hidden rounded-[28px] bg-black shadow-[0_24px_70px_rgba(0,0,0,0.18)] sm:h-[580px] md:h-[430px] md:flex-row lg:h-[500px]">
+          {images.map((item, index) => {
+            const isActive = active === index;
 
-              {/* Dark Overlay */}
+            return (
               <div
-                className={`absolute inset-0 transition duration-500 ${
-                  isActive ? "bg-black/0" : "bg-black/50"
+                key={index}
+                onMouseEnter={() => setActive(index)}
+                onClick={() => setActive(index)}
+                className={`relative min-h-[120px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out md:min-h-0 ${
+                  isActive ? "flex-[2.8]" : "flex-[1]"
                 }`}
-              />
+              >
+                {/* Image */}
+                <img
+                  src={item.src}
+                  alt={item.label}
+                  className={`h-full w-full object-cover transition duration-700 ${
+                    isActive ? "scale-105" : "scale-100"
+                  }`}
+                />
 
-              {/* Label */}
-              <p className="absolute bottom-4 left-4 text-white text-sm tracking-wide">
-                {item.label}
-              </p>
-            </div>
-          );
-        })}
+                {/* Overlay */}
+                <div
+                  className={`absolute inset-0 transition duration-500 ${
+                    isActive
+                      ? "bg-gradient-to-t from-black/70 via-black/10 to-transparent"
+                      : "bg-black/55"
+                  }`}
+                />
+
+                {/* Label */}
+                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
+                  <p className="text-[11px] font-extrabold uppercase tracking-[1.8px] text-white sm:text-xs">
+                    {item.label}
+                  </p>
+
+                  {isActive && (
+                    <p className="mt-2 max-w-sm text-xs font-medium leading-5 text-white/75 sm:text-sm">
+                      Casagrand Moondance brings together comfort, greenery,
+                      lifestyle amenities, and peaceful low-rise living.
+                    </p>
+                  )}
+                </div>
+
+                {/* Number */}
+                <div className="absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xs font-bold text-white backdrop-blur-xl">
+                  0{index + 1}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <button className="rounded-full bg-[#FCB33A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
+            Download Brochure
+          </button>
+        </div>
       </div>
     </section>
   );

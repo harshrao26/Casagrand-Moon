@@ -1,32 +1,38 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
   return (
-   <section className="bg-[#f5f5f5] py-14 px-5 lg:px-10">
-  <div className="max-w-5xl mx-auto text-center">
+    <section className="bg-[#f5f5f5] px-5 py-14 sm:py-16 lg:px-10 lg:py-20">
+      <div className="mx-auto max-w-5xl text-center">
+        {/* Label */}
+        <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#FCB33A] sm:text-xs">
+          About Casagrand Moondance
+        </p>
 
-    {/* Heading */}
-    <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-semibold text-black leading-snug">
-      LifeDesigned® Duplex Residences in Whitefield Bengaluru
-    </h2>
+        {/* Heading */}
+        <h2 className="text-[26px] font-semibold leading-snug text-black sm:text-[32px] lg:text-[40px]">
+          1, 2 & 3 BHK Premium Apartments in Kumbalgodu, Off Mysore Road
+        </h2>
 
-    {/* Paragraph 1 */}
-    <p className="mt-6 text-[15px] sm:text-[16px] text-black/80 leading-relaxed">
-      Nestled in Whitefield, Birla Alokya is Bengaluru’s most sought after IT destination,
-      our residential spaces at Birla Alokya are inspired by the best of old and new Bengaluru
-      and combine the best aspects giving villa like luxury with the vibrancy of apartment neighborhoods.
-    </p>
+        {/* Paragraph 1 */}
+        <p className="mt-6 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
+          Casagrand Moondance is a thoughtfully planned residential community in
+          Kumbalgodu, off Mysore Road, Bengaluru. Designed for modern families,
+          the project offers premium 1, 2 & 3 BHK apartments with elegant
+          layouts, landscaped open spaces, and a peaceful low-rise living
+          environment.
+        </p>
 
-    {/* Paragraph 2 */}
-    <p className="mt-5 text-[15px] sm:text-[16px] text-black/80 leading-relaxed">
-      At Birla Alokya, you'll find sophisticated, modern residences that are also reminiscent
-      of the peaceful charm of old Bengaluru. Every aspect of our residential spaces is crafted
-      with meticulous detail to enable a truly modern, yet nostalgic living experience.
-    </p>
+        {/* Paragraph 2 */}
+        <p className="mt-5 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
+          Spread across 8.25 acres with 504 premium homes across 3 residential
+          wings, Casagrand Moondance combines everyday comfort, smart planning,
+          lifestyle amenities, and strong connectivity to key parts of
+          Bengaluru through Mysore Road.
+        </p>
+      </div>
+    </section>
+  );
+};
 
-  </div>
-</section>
-  )
-}
-
-export default About
+export default About;

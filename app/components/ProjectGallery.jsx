@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLeadForm } from "./LeadFormContext";
 
 const images = [
   {
@@ -22,6 +23,7 @@ const images = [
 ];
 
 export default function ProjectGallery() {
+  const { openLeadForm } = useLeadForm();
   const [active, setActive] = useState(2);
 
   return (
@@ -100,7 +102,7 @@ export default function ProjectGallery() {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
+          <button onClick={openLeadForm} className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
             Download Brochure
           </button>
         </div>

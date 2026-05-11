@@ -71,7 +71,7 @@ export const LeadFormFields = ({
         source,
         pageUrl:
           typeof window !== "undefined" ? window.location.href : "",
-        project: "Casagrand Casablanca",
+        project: "Casagrand Moondance",
         createdAt: new Date().toISOString(),
       };
 
@@ -166,7 +166,7 @@ export const LeadFormFields = ({
           className="text-xs leading-relaxed text-zinc-500"
         >
           I agree to the{" "}
-          <a href="#" className="font-bold text-zinc-950 hover:underline">
+          <a href="https://www.casagrand.co.in/new-privacy-policy/" className="font-bold text-zinc-950 hover:underline">
             Privacy Policy
           </a>{" "}
           and authorize Casagrand to contact me.
@@ -211,44 +211,67 @@ const LeadFormModal = ({ isOpen, onClose }) => {
       <button
         type="button"
         aria-label="Close lead form"
-        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/75 backdrop-blur-md"
         onClick={onClose}
       />
 
-      <div className="relative max-h-[92vh] w-full max-w-lg overflow-y-auto rounded-[34px] bg-white p-5 shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:p-7">
-        <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-[#BD9E5A]/15 blur-[90px]" />
+      <div className="relative grid max-h-[92vh] w-full max-w-4xl overflow-hidden rounded-[34px] bg-white shadow-[0_40px_140px_rgba(0,0,0,0.45)] md:grid-cols-[0.85fr_1.15fr]">
+        <div className="relative hidden md:block bg-[#120d08] p-6 text-white sm:p-8">
+          <div className="absolute -left-20 top-20 h-72 w-72 rounded-full bg-[#BD9E5A]/20 blur-[100px]" />
 
-        <div className="relative z-10 mb-6 flex items-start justify-between gap-6">
-          <div>
-            <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-[#BD9E5A]/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[2px] text-[#BD9E5A]">
-              <CalendarCheck size={14} />
-              Casagrand Casablanca
+          <div className="relative z-10">
+            <p className="inline-flex rounded-full bg-[#BD9E5A] px-4 py-2 text-[10px] font-extrabold uppercase tracking-[2px] text-black">
+              New Launch
             </p>
 
-            <h2 className="text-3xl font-extrabold leading-tight text-zinc-950 md:text-4xl">
-              Book Your <span className="text-[#BD9E5A]">Site Visit</span>
+            <h2 className="mt-6 text-3xl font-extrabold leading-tight sm:text-4xl">
+              Get Early Buyer Offer Details
             </h2>
 
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Share your details and our team will contact you shortly.
+            <p className="mt-4 text-sm leading-7 text-white/65">
+              Receive pricing, current availability, floor plans, and expert
+              assistance before booking.
             </p>
-          </div>
 
+            <div className="mt-7 space-y-3">
+              {["2 & 3 BHK Apartments", "Kumbalgodu, Off Mysore Road", "8.25 Acres Community"].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-bold"
+                  >
+                    {item}
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative max-h-[92vh] overflow-y-auto p-5 sm:p-7">
           <button
             type="button"
             aria-label="Close"
             onClick={onClose}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-900 transition hover:bg-zinc-200"
+            className="absolute right-5 top-5 grid h-10 w-10 place-items-center rounded-full bg-zinc-100 text-zinc-900 transition hover:bg-zinc-950 hover:text-white"
           >
             <X size={20} />
           </button>
-        </div>
 
-        <div className="relative z-10">
+          <div className="mb-6 pr-12">
+            <p className="mb-2 text-[11px] font-extrabold uppercase tracking-[2px] text-[#BD9E5A]">
+              Enquire Now
+            </p>
+            <h3 className="text-xl md:text-2xl font-extrabold text-zinc-950">
+              Fill Your Details
+            </h3>
+          </div>
+
           <LeadFormFields
             consentId="modal-lead-consent"
             source="Popup Lead Form"
             onSuccess={onClose}
+            buttonText="Get Offer Details"
           />
         </div>
       </div>

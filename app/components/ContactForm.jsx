@@ -1,17 +1,54 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 
 export default function ContactForm() {
+  const router = useRouter();
+
   const [form, setForm] = useState({
     name: "",
     phone: "",
+    email: "",
     country: "+91 (India)",
     consent: false,
   });
 
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState("idle"); // idle | loading | error
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          source: "Contact Form",
+          pageUrl: typeof window !== "undefined" ? window.location.href : "",
+          project: "Casagrand Moondance",
+          createdAt: new Date().toISOString(),
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Submission failed");
+      }
+
+      router.push("/thank-you");
+    } catch (err) {
+      setError("Something went wrong. Please try again.");
+      setStatus("error");
+    }
   };
 
   return (
@@ -47,6 +84,18 @@ export default function ContactForm() {
             required
           />
 
+          {/* Email */}
+          <input
+            type="email"
+            placeholder="*Email Address"
+            value={form.email}
+            onChange={(e) =>
+              setForm((prev) => ({ ...prev, email: e.target.value }))
+            }
+            className="mb-4 w-full rounded-none bg-white px-4 py-2.5 text-sm text-black outline-none placeholder:text-black/45"
+            required
+          />
+
           {/* Phone Row */}
           <div className="mb-4 flex flex-col gap-3 sm:flex-row">
             <select
@@ -74,6 +123,13 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Error */}
+          {error && (
+            <p className="mb-4 rounded bg-red-500/20 px-4 py-2.5 text-sm font-semibold text-red-300">
+              {error}
+            </p>
+          )}
+
           {/* Checkbox */}
           <label className="mb-6 flex cursor-pointer items-start gap-2">
             <input
@@ -97,9 +153,17 @@ export default function ContactForm() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-[#BD9E5A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-white rounded-full transition hover:bg-white"
+              disabled={status === "loading"}
+              className="inline-flex items-center gap-2 rounded-full bg-[#BD9E5A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-white transition hover:bg-white hover:text-[#36295D] disabled:cursor-not-allowed disabled:opacity-70"
             >
-              Submit Enquiry
+              {status === "loading" ? (
+                <>
+                  <Loader2 size={16} className="animate-spin" />
+                  Submitting...
+                </>
+              ) : (
+                "Submit Enquiry"
+              )}
             </button>
           </div>
         </form>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Building2, IndianRupee, MapPin, Sofa } from "lucide-react";
+import { useLeadForm } from "./LeadFormContext";
 
 const stats = [
   {
@@ -27,6 +28,7 @@ const stats = [
 ];
 
 export default function HeroSection() {
+  const { openLeadForm } = useLeadForm();
   const [active, setActive] = useState(0);
 
   useEffect(() => {
@@ -72,11 +74,11 @@ export default function HeroSection() {
         </p> */}
 
         <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row">
-          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-white sm:px-8 sm:py-4">
+          <button onClick={openLeadForm} className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-white sm:px-8 sm:py-4">
             Enquire Now
           </button>
 
-          <button className="rounded-full border border-white/20 bg-white/10 px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white backdrop-blur-xl transition hover:bg-white hover:text-black sm:px-8 sm:py-4">
+          <button onClick={openLeadForm} className="rounded-full border border-white/20 bg-white/10 px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white backdrop-blur-xl transition hover:bg-white hover:text-black sm:px-8 sm:py-4">
             Download Brochure
           </button>
         </div>

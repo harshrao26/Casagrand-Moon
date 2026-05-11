@@ -1,6 +1,9 @@
 "use client";
 
+import { useLeadForm } from "./LeadFormContext";
+
 export default function SustainabilitySection() {
+  const { openLeadForm } = useLeadForm();
   return (
     <section className="bg-[#f5f5f5] px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
       {/* Heading */}
@@ -57,7 +60,7 @@ export default function SustainabilitySection() {
           </p>
 
           {/* Button */}
-          <button className="mt-6 flex items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-white transition hover:bg-black hover:text-white sm:text-sm">
+          <button onClick={openLeadForm} className="mt-6 flex items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-white transition hover:bg-black hover:text-white sm:text-sm">
             Know More →
           </button>
         </div>

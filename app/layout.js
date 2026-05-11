@@ -10,9 +10,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Casagrand Casablanca | Premium Apartments in Bengaluru",
+  title: "Casagrand Moondance | Premium Apartments in Kumbalgodu, Bengaluru",
   description:
-    "Explore Casagrand Casablanca, a premium Roman-themed residential community in Bengaluru with luxury homes, world-class amenities, clubhouse, pricing, gallery and location details.",
+    "Explore Casagrand Moondance, a premium residential community in Kumbalgodu, Bengaluru with luxury homes, world-class amenities, clubhouse, pricing, gallery and location details.",
+  icons: {
+    icon: "/image-removebg-preview.png",
+    apple: "/image-removebg-preview.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -21,8 +25,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans antialiased">
         
         <LeadFormProvider>
-          <Header/>
-          
+           
           {children}</LeadFormProvider>
       </body>
     </html>

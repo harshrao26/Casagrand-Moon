@@ -56,7 +56,7 @@ export default function ProjectGallery() {
                 key={index}
                 onMouseEnter={() => setActive(index)}
                 onClick={() => setActive(index)}
-                className={`relative min-h-[120px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out md:min-h-0 ${
+                className={`relative min-h-20px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out md:min-h-0 ${
                   isActive ? "flex-[2.8]" : "flex-[1]"
                 }`}
               >
@@ -80,22 +80,15 @@ export default function ProjectGallery() {
 
                 {/* Label */}
                 <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-                  <p className="text-[11px] font-extrabold uppercase tracking-[1.8px] text-white sm:text-xs">
+                  <p className="text-[11px] font-extrabold uppercase tracking-[1.8px] text-white sm:text-xs md:block hidden">
                     {item.label}
                   </p>
 
-                  {isActive && (
-                    <p className="mt-2 max-w-sm text-xs font-medium leading-5 text-white/75 sm:text-sm">
-                      Casagrand Moondance brings together comfort, greenery,
-                      lifestyle amenities, and peaceful low-rise living.
-                    </p>
-                  )}
+                  
                 </div>
 
                 {/* Number */}
-                <div className="absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xs font-bold text-white backdrop-blur-xl">
-                  0{index + 1}
-                </div>
+                
               </div>
             );
           })}

@@ -101,22 +101,7 @@ export default function Header() {
 
           {/* Desktop Right */}
           <div className="hidden shrink-0 items-center gap-3 lg:flex">
-            <div className="hidden items-center gap-2 2xl:flex">
-              {quickInfo.map((item) => {
-                const Icon = item.icon;
-
-                return (
-                  <div
-                    key={item.label}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-black/5 px-3 py-2 text-[10px] font-bold uppercase tracking-[1px] text-black/60"
-                  >
-                    <Icon className="h-3.5 w-3.5 text-[#c78305]" />
-                    {item.label}
-                  </div>
-                );
-              })}
-            </div>
-
+            
             <button
               type="button"
               onClick={handleLeadClick}
@@ -125,14 +110,7 @@ export default function Header() {
               Book Visit
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </button>
-
-            <a
-              href="tel:+919999999999"
-              className="grid h-11 w-11 place-items-center rounded-full bg-[#241812] text-white transition hover:bg-[#BD9E5A] hover:text-black"
-              aria-label="Call sales team"
-            >
-              <Phone className="h-4.5 w-4.5" />
-            </a>
+ 
           </div>
 
           {/* Mobile Menu Button */}
@@ -184,23 +162,7 @@ export default function Header() {
             </div>
 
             {/* Quick Info */}
-            <div className="grid grid-cols-2 gap-3 px-5 py-4">
-              {quickInfo.map((item) => {
-                const Icon = item.icon;
-
-                return (
-                  <div
-                    key={item.label}
-                    className="rounded-2xl bg-white px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.05)]"
-                  >
-                    <Icon className="mb-2 h-4 w-4 text-[#c78305]" />
-                    <p className="text-[11px] font-extrabold uppercase tracking-[1.2px] text-black/70">
-                      {item.label}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+          
 
             {/* Nav */}
             <nav className="flex flex-1 flex-col gap-2 overflow-y-auto px-5 pb-5">

@@ -212,7 +212,7 @@ const Location = () => {
                     Project Location
                   </p>
 
-                  <h3 className="mt-2 text-lg font-semibold text-white sm:text-2xl">
+                  <h3 className="mt-2 text-sm font-semibold text-white sm:text-xl">
                     Casagrand Moondance, Kumbalgodu
                   </h3>
 

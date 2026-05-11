@@ -65,13 +65,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed left-0 top-0 z-50 w-full px-3 pt-3 sm:px-5">
+      <header className="fixed left-0 bg-white top-0 z-50 w-full  ">
         <div
-          className={`mx-auto flex max-w-[1420px] items-center justify-between gap-4 rounded-[22px] border px-4 py-3 transition-all duration-300 sm:px-5 lg:px-6 ${
-            isScrolled
-              ? "border-black/10 bg-white/95 shadow-[0_18px_55px_rgba(0,0,0,0.12)] backdrop-blur-xl"
-              : "border-white/40 bg-white/90 shadow-[0_14px_45px_rgba(0,0,0,0.08)] backdrop-blur-xl"
-          }`}
+          className={`mx-auto flex  max-w-7xl  items-center justify-between gap-4  md:px-0 px-4    py-3 transition-all duration-300    `}
         >
           {/* Logo */}
           <a

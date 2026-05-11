@@ -25,7 +25,7 @@ export default function SustainabilitySection() {
       </div>
 
       {/* Wrapper */}
-      <div className="relative mx-auto h-[560px] max-w-6xl overflow-hidden rounded-[30px] shadow-[0_24px_80px_rgba(0,0,0,0.12)] sm:h-[500px] lg:h-[540px]">
+      <div className="relative mx-auto h-[560px] max-w-7xl overflow-hidden rounded-[30px] shadow-[0_24px_80px_rgba(0,0,0,0.12)] sm:h-[500px] lg:h-[540px]">
         {/* Background Image */}
         <img
           src="/indoor-images/Copy of s11.jpg"

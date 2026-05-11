@@ -19,7 +19,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
 
-      <section id="home">
+      <section id="home" className="mt-20">
         <Hero />
       </section>
 

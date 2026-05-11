@@ -128,7 +128,7 @@ export default function AmenitiesSection() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
+          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
             Download Brochure
           </button>
         </div>

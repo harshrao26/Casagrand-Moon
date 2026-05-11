@@ -72,7 +72,7 @@ export default function HeroSection() {
         </p> */}
 
         <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row">
-          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-black transition hover:bg-white sm:px-8 sm:py-4">
+          <button className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-white sm:px-8 sm:py-4">
             Enquire Now
           </button>
 

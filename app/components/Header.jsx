@@ -105,7 +105,7 @@ export default function Header() {
             <button
               type="button"
               onClick={handleLeadClick}
-              className="group inline-flex h-11 items-center gap-2 rounded-full bg-[#BD9E5A] px-5 text-xs font-extrabold uppercase tracking-[1.4px] text-black transition hover:bg-black hover:text-white"
+              className="group inline-flex h-11 items-center gap-2 rounded-full bg-[#BD9E5A] px-5 text-xs font-extrabold uppercase tracking-[1.4px] text-white transition hover:bg-black hover:text-white"
             >
               Book Visit
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

@@ -57,7 +57,7 @@ export default function SustainabilitySection() {
           </p>
 
           {/* Button */}
-          <button className="mt-6 flex items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-black transition hover:bg-black hover:text-white sm:text-sm">
+          <button className="mt-6 flex items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.5px] text-white transition hover:bg-black hover:text-white sm:text-sm">
             Know More →
           </button>
         </div>

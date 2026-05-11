@@ -297,14 +297,7 @@ export default function VillamentsSection() {
                   
                 </div>
 
-                <a
-                  href={activeImage.src}
-                  download
-                  className="inline-flex w-fit items-center gap-2 rounded-full bg-[#BD9E5A] px-5 py-3 text-[11px] font-extrabold uppercase tracking-[1.4px] text-black transition hover:bg-black hover:text-white"
-                >
-                  <ArrowDownToLine className="h-4 w-4" />
-                  Download
-                </a>
+              
               </div>
 
               {/* Image Area */}

@@ -153,7 +153,7 @@ export default function PriceSection() {
 
         {/* CTA Row */}
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <button className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#c78305] px-8 py-4 text-xs font-extrabold uppercase tracking-[2px] text-white shadow-[0_18px_45px_rgba(199,131,5,0.25)] transition hover:bg-black sm:w-auto sm:min-w-[280px]">
+          <button className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#BD9E5A] px-8 py-4 text-xs font-extrabold uppercase tracking-[2px] text-white shadow-[0_18px_45px_rgba(199,131,5,0.25)] transition hover:bg-black sm:w-auto sm:min-w-[280px]">
             <ArrowDownToLine className="h-5 w-5" />
             Get Offer Details
           </button>

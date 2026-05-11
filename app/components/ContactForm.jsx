@@ -97,7 +97,7 @@ export default function ContactForm() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-[#BD9E5A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-black transition hover:bg-white"
+              className="bg-[#BD9E5A] px-8 py-2.5 text-sm font-bold uppercase tracking-[1.6px] text-white rounded-full transition hover:bg-white"
             >
               Submit Enquiry
             </button>

@@ -139,13 +139,13 @@ const Location = () => {
         {/* Heading */}
         <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
-            <p className="text-[11px] font-extrabold uppercase tracking-[3px] text-[#c78305] sm:text-xs">
+            <p className="text-[11px] font-extrabold uppercase tracking-[3px] text-[#BD9E5A] sm:text-xs">
               Location Advantage
             </p>
 
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl">
               Kumbalgodu Nearby{" "}
-              <span className="text-[#c78305]">Connectivity</span>
+              <span className="text-[#BD9E5A]">Connectivity</span>
             </h2>
           </div>
 
@@ -166,7 +166,7 @@ const Location = () => {
                 key={index}
                 className="group rounded-[24px] border border-black/10 bg-white p-4 text-center shadow-[0_14px_45px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-1 hover:border-[#BD9E5A]/60 hover:shadow-[0_22px_65px_rgba(0,0,0,0.08)] sm:p-5"
               >
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#BD9E5A]/15 text-[#c78305] transition-all duration-300 group-hover:bg-[#BD9E5A] group-hover:text-black sm:h-14 sm:w-14">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#BD9E5A]/15 text-[#BD9E5A] transition-all duration-300 group-hover:bg-[#BD9E5A] group-hover:text-black sm:h-14 sm:w-14">
                   <Icon size={22} strokeWidth={1.8} />
                 </div>
 
@@ -175,7 +175,7 @@ const Location = () => {
                 </p>
 
                 <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-                  <p className="inline-flex items-center gap-1.5 rounded-full bg-[#f5f2ea] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[1px] text-[#c78305] sm:text-xs">
+                  <p className="inline-flex items-center gap-1.5 rounded-full bg-[#f5f2ea] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[1px] text-[#BD9E5A] sm:text-xs">
                     <Clock size={12} />
                     {item.dist}
                   </p>
@@ -226,7 +226,7 @@ const Location = () => {
                   href="https://www.google.com/maps/search/?api=1&query=VFF2%2BQRJ%2C%20off%20Mysore%20Road%2C%20Kumbalgodu%2C%20Bengaluru%2C%20Karnataka%20560074"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.4px] text-black transition hover:bg-white sm:text-sm"
+                  className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#BD9E5A] px-6 py-3 text-xs font-extrabold uppercase tracking-[1.4px] text-white transition hover:bg-white sm:text-sm"
                 >
                   <Navigation size={17} />
                   View Location
@@ -239,7 +239,7 @@ const Location = () => {
         {/* Full Nearby List */}
         <div className="mt-7 overflow-hidden rounded-[30px] border border-black/10 bg-white shadow-[0_20px_70px_rgba(0,0,0,0.06)] sm:rounded-[34px]">
           <div className="border-b border-black/10 p-5 sm:p-6">
-            <p className="text-[11px] font-extrabold uppercase tracking-[2.5px] text-[#c78305] sm:text-xs">
+            <p className="text-[11px] font-extrabold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
               Nearby Places
             </p>
 
@@ -257,7 +257,7 @@ const Location = () => {
                   key={index}
                   className="flex items-center gap-4 bg-white p-4 transition hover:bg-[#f9f5ea] sm:p-5"
                 >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#BD9E5A]/15 text-[#c78305]">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#BD9E5A]/15 text-[#BD9E5A]">
                     <Icon size={20} strokeWidth={1.8} />
                   </div>
 
@@ -274,7 +274,7 @@ const Location = () => {
                       </div>
 
                       <div className="shrink-0 text-right">
-                        <p className="text-xs font-extrabold text-[#c78305]">
+                        <p className="text-xs font-extrabold text-[#BD9E5A]">
                           {item.dist}
                         </p>
 

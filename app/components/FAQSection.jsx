@@ -40,7 +40,7 @@ export default function FAQSection() {
   return (
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
       {/* Heading */}
-      <div className="mx-auto mb-10 max-w-3xl text-center">
+      <div className="mx-auto mb-10 max-w-7xl text-center">
         <p className="mb-3 text-[11px] font-bold uppercase tracking-[2.5px] text-[#BD9E5A] sm:text-xs">
           Frequently Asked Questions
         </p>
@@ -56,7 +56,7 @@ export default function FAQSection() {
       </div>
 
       {/* FAQ List */}
-      <div className="mx-auto max-w-4xl space-y-4">
+      <div className="mx-auto max-w-7xl space-y-4">
         {faqs.map((item, index) => {
           const isOpen = active === index;
 

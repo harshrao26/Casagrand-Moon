@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <footer className="bg-[#f5f5f5] px-5 py-10 text-black/70 sm:px-6 lg:px-10">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         {/* Disclaimer Text */}
         <div className="space-y-4 text-[12px] leading-relaxed sm:text-[13px]">
           <p>

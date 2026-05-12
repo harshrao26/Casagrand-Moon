@@ -11,13 +11,13 @@ const About = () => {
 
         {/* Heading */}
         <h2 className="text-[26px] font-semibold leading-snug text-black sm:text-[32px] lg:text-[40px]">
-          2 & 3 BHK Premium Apartments in Kumbalgodu, Off Mysore Road
+          2 & 3 BHK Premium Apartments in Off Mysore Road, 10mins from RR nagar, Bengaluru
         </h2>
 
         {/* Paragraph 1 */}
         <p className="mt-6 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
           Casagrand Moondance is a thoughtfully planned residential community in
-          Kumbalgodu, off Mysore Road, Bengaluru. Designed for modern families,
+          Off Mysore Road, 10mins from RR nagar, Bengaluru. Designed for modern families,
           the project offers premium 2 & 3 BHK apartments with elegant
           layouts, landscaped open spaces, and a peaceful low-rise living
           environment.
@@ -25,7 +25,7 @@ const About = () => {
 
         {/* Paragraph 2 */}
         <p className="mt-5 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
-          Spread across 8.25 acres with 504 premium homes across 3 residential
+          Spread across 8.64 acres with 504 premium homes across 3 residential
           wings, Casagrand Moondance combines everyday comfort, smart planning,
           lifestyle amenities, and strong connectivity to key parts of
           Bengaluru through Mysore Road.

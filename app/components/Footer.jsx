@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="space-y-4 text-[12px] leading-relaxed sm:text-[13px]">
           <p>
             The project “Casagrand Moondance” is a residential development
-            located at Kumbalgodu, off Mysore Road, Bengaluru, Karnataka –
+            located at Off Mysore Road, 10mins from RR nagar, Bengaluru, Karnataka –
             560074. Project information including pricing, specifications,
             amenities, floor plans, availability, possession timelines, and
             approvals is subject to change and should be verified with the
@@ -72,7 +72,7 @@ export default function Footer() {
               Project Address
             </p>
             <p className="mt-1">
-              VFF2+QRJ, off Mysore Road, Kumbalgodu, Bengaluru, Karnataka –
+              VFF2+QRJ, Off Mysore Road, 10mins from RR nagar, Bengaluru, Karnataka –
               560074.
             </p>
           </div>

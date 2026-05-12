@@ -47,7 +47,7 @@ export default function SustainabilitySection() {
           </h3>
 
           <p className="mt-4 text-[14px] leading-relaxed text-black/70 sm:text-[15px]">
-            Designed across 8.25 acres, Casagrand Moondance brings together
+            Designed across 8.64 acres, Casagrand Moondance brings together
             landscaped open spaces, low-rise planning, natural light,
             ventilation, and community areas that encourage balanced and
             comfortable urban living.
@@ -56,7 +56,7 @@ export default function SustainabilitySection() {
           <p className="mt-3 text-[14px] leading-relaxed text-black/70 sm:text-[15px]">
             The project focuses on creating a calmer residential environment
             with open greenery, lifestyle amenities, and thoughtfully planned
-            spaces for families in Kumbalgodu, off Mysore Road.
+            spaces for families, Off Mysore Road, 10mins from RR nagar, Bengaluru.
           </p>
 
           {/* Button */}

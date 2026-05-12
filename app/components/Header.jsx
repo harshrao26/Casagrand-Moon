@@ -27,7 +27,7 @@ const navItems = [
 const quickInfo = [
   {
     icon: MapPin,
-    label: "Kumbalgodu",
+    label: "Off Mysore Road",
   },
   {
     icon: IndianRupee,

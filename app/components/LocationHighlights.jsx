@@ -48,7 +48,7 @@ export default function LocationHighlights() {
           </h2>
 
           <p className="mt-4 text-sm leading-7 text-black/65 sm:text-base">
-            Casagrand Moondance is located in Kumbalgodu, off Mysore Road, with
+            Casagrand Moondance is located at Off Mysore Road, 10mins from RR nagar, with
             strong access to NH 275, NICE Road, Kengeri, Rajarajeshwari Nagar,
             and Mysore Road Metro connectivity.
           </p>

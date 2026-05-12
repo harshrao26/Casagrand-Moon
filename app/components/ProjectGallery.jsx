@@ -42,7 +42,7 @@ export default function ProjectGallery() {
           <p className="mt-4 text-sm leading-7 text-black/65 sm:text-base">
             A glimpse of premium apartment living, landscaped surroundings,
             thoughtfully planned spaces, and modern community experiences at
-            Kumbalgodu, off Mysore Road.
+            Off Mysore Road, 10mins from RR nagar, Bengaluru.
           </p>
         </div>
 

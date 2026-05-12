@@ -8,7 +8,7 @@ const stats = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Kumbalgodu, Bengaluru",
+    value: "Off Mysore Road, 10mins from RR nagar, Bengaluru",
   },
   {
     icon: IndianRupee,
@@ -18,7 +18,7 @@ const stats = [
   {
     icon: Building2,
     label: "Project Size",
-    value: "8.25 Acres | 504 Homes",
+    value: "8.64 Acres | 504 Homes",
   },
   {
     icon: Sofa,
@@ -47,7 +47,7 @@ export default function HeroSection() {
       <img
         src="/indoor-images/Copy of s03.jpg"
         className=""
-        alt="Casagrand Moondance Kumbalgodu Bengaluru"
+        alt="Casagrand Moondance OFF mysore road, 10mins from RR nagar Bengaluru"
       />
 
       {/* Overlay */}

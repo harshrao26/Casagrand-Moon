@@ -67,7 +67,7 @@ export default function ContactForm() {
           <p className="mt-4 text-sm leading-7 text-white/80 sm:text-base">
             Share your details to receive pricing, floor plans, brochure,
             availability, and site visit assistance for Casagrand Moondance,
-            Kumbalgodu, off Mysore Road.
+            Off Mysore Road, 10mins from RR nagar, Bengaluru.
           </p>
         </div>
 

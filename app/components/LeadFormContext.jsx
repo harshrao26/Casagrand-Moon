@@ -234,7 +234,7 @@ const LeadFormModal = ({ isOpen, onClose }) => {
             </p>
 
             <div className="mt-7 space-y-3">
-              {["2 & 3 BHK Apartments", "Kumbalgodu, Off Mysore Road", "8.25 Acres Community"].map(
+              {["2 & 3 BHK Apartments", "Off Mysore Road, 10mins from RR nagar", "8.64 Acres Community"].map(
                 (item) => (
                   <div
                     key={item}

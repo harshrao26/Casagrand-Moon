@@ -144,7 +144,7 @@ const Location = () => {
             </p>
 
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl">
-              Kumbalgodu Nearby{" "}
+              Off Mysore Road Nearby{" "}
               <span className="text-[#BD9E5A]">Connectivity</span>
             </h2>
           </div>
@@ -152,7 +152,7 @@ const Location = () => {
           <p className="max-w-2xl text-sm leading-7 text-black/60 sm:text-base lg:ml-auto lg:text-right">
             Enjoy quick access to NICE Road, metro stations, railway
             connectivity, hospitals, education hubs, business destinations, and
-            daily conveniences around Kumbalgodu.
+            daily conveniences around Off Mysore Road, 10mins from RR nagar.
           </p>
         </div>
 
@@ -213,11 +213,11 @@ const Location = () => {
                   </p>
 
                   <h3 className="mt-2 text-sm font-semibold text-white sm:text-xl">
-                    Casagrand Moondance, Kumbalgodu
+                    Casagrand Moondance, Off Mysore Road
                   </h3>
 
                   <p className="mt-2 text-xs leading-5 text-white/70 sm:text-sm">
-                    VFF2+QRJ, off Mysore Road, Kumbalgodu, Bengaluru,
+                    VFF2+QRJ, Off Mysore Road, 10mins from RR nagar, Bengaluru,
                     Karnataka 560074
                   </p>
                 </div>

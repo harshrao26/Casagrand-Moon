@@ -3,7 +3,7 @@
 const highlights = [
   {
     value: "01",
-    label: "8.25 Acres of Land Area",
+    label: "8.64 Acres of Land Area",
     image:
       "https://images.unsplash.com/photo-1592595896551-12b371d546d5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
@@ -42,8 +42,8 @@ export default function ProjectHighlights() {
           </h2>
 
           <p className="mt-4 text-sm leading-7 text-black/65 sm:text-base">
-            A thoughtfully planned residential community in Kumbalgodu, off
-            Mysore Road, designed with low-rise living, open landscapes, and
+            A thoughtfully planned residential community at Off Mysore Road, 10mins from
+            RR nagar, Bengaluru, designed with low-rise living, open landscapes, and
             modern apartment comfort.
           </p>
         </div>

@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "What is Casagrand Moondance?",
-    a: "Casagrand Moondance is a premium residential apartment community in Kumbalgodu, off Mysore Road, Bengaluru, offering thoughtfully planned homes with lifestyle amenities and open community spaces.",
+    a: "Casagrand Moondance is a premium residential apartment community at Off Mysore Road, 10mins from RR nagar, Bengaluru, offering thoughtfully planned homes with lifestyle amenities and open community spaces.",
   },
   {
     q: "What apartment configurations are available at Casagrand Moondance?",
@@ -14,11 +14,11 @@ const faqs = [
   },
   {
     q: "Where is Casagrand Moondance located?",
-    a: "Casagrand Moondance is located in Kumbalgodu, off Mysore Road / NH 275, Bengaluru, with connectivity to NICE Road, Kengeri, Rajarajeshwari Nagar, and Mysore Road Metro.",
+    a: "Casagrand Moondance is located on Off Mysore Road / NH 275, 10mins from RR nagar, Bengaluru, with connectivity to NICE Road, Kengeri, Rajarajeshwari Nagar, and Mysore Road Metro.",
   },
   {
     q: "What is the total project size of Casagrand Moondance?",
-    a: "Casagrand Moondance is spread across approximately 8.25 acres and includes 504 apartment homes across 3 residential wings.",
+    a: "Casagrand Moondance is spread across approximately 8.64 acres and includes 504 apartment homes across 3 residential wings.",
   },
   {
     q: "How many floors are planned in Casagrand Moondance?",

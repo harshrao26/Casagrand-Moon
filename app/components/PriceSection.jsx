@@ -5,14 +5,14 @@ import { useLeadForm } from "./LeadFormContext";
 
 const priceRows = [
   {
-    projectName: "Kumbalgodu",
+    projectName: "Off Mysore Road",
     bhk: "2 BHK",
     launchSqft: "5199",
     area: "1171 - 1470 Sq.ft",
     price: "₹72L - ₹86L",
   },
   {
-    projectName: "Kumbalgodu",
+    projectName: "Off Mysore Road",
     bhk: "3 BHK",
     launchSqft: "5199",
     area: "1641 - 1866 Sq.ft",
@@ -39,8 +39,8 @@ export default function PriceSection() {
           </h2>
 
           <p className="mt-4 text-sm leading-7 text-black/60 sm:text-base">
-            Choose from spacious 2 & 3 BHK premium apartments at Kumbalgodu, off
-            Mysore Road, Bengaluru.
+            Choose from spacious 2 & 3 BHK premium apartments at Off Mysore Road, 10mins
+            from RR nagar, Bengaluru.
           </p>
         </div>
 
@@ -49,9 +49,7 @@ export default function PriceSection() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-[#36295d] text-white">
-                <th className="border-r border-white/10 px-8 py-6 text-left text-[13px] font-extrabold uppercase tracking-[2.5px]">
-                  Project Name
-                </th>
+                
                 <th className="border-r border-white/10 px-8 py-6 text-center text-[13px] font-extrabold uppercase tracking-[2.5px]">
                   BHK
                 </th>
@@ -73,9 +71,7 @@ export default function PriceSection() {
                   key={`${row.bhk}-${index}`}
                   className="border-b border-black/10 last:border-b-0"
                 >
-                  <td className="border-r border-black/10 px-8 py-8 text-[15px] font-extrabold uppercase tracking-[1.8px] text-black">
-                    {row.projectName}
-                  </td>
+                  
 
                   <td className="border-r border-black/10 px-8 py-8 text-center text-[16px] font-extrabold uppercase tracking-[1.5px] text-black">
                     {row.bhk}

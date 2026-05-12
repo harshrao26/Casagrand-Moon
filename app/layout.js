@@ -10,9 +10,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Casagrand Moondance | Premium Apartments in Kumbalgodu, Bengaluru",
+  title: "Casagrand Moondance | Premium Apartments Off Mysore Road, Bengaluru",
   description:
-    "Explore Casagrand Moondance, a premium residential community in Kumbalgodu, Bengaluru with luxury homes, world-class amenities, clubhouse, pricing, gallery and location details.",
+    "Explore Casagrand Moondance, a premium residential community at Off Mysore Road, 10mins from RR nagar, Bengaluru with luxury homes, world-class amenities, clubhouse, pricing, gallery and location details.",
   icons: {
     icon: "/image-removebg-preview.png",
     apple: "/image-removebg-preview.png",

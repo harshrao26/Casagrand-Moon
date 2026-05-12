@@ -42,7 +42,7 @@ export default function HeroSection() {
   const ActiveIcon = stats[active].icon;
 
   return (
-    <section className="relative h-[42vh]  overflow-hidden bg-black md:h-[90vh] md:min-h-[720px]">
+    <section className="relative    overflow-hidden bg-black   ">
       {/* Background */}
       <img
         src="/indoor-images/Copy of s03.jpg"
@@ -50,84 +50,9 @@ export default function HeroSection() {
         alt="Casagrand Moondance OFF mysore road, 10mins from RR nagar Bengaluru"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
+     
 
-      {/* Center Content */}
-      <div className="relative z-10 mx-auto flex min-h-full max-w-7xl flex-col items-center justify-center px-4 pb-36 pt-24 text-center sm:px-6 lg:pb-28">
-         
-        <h5 className="max-w-4xl text-4xl font-semibold leading-[1.12] tracking-tight text-white sm:text-5xl  ">
-          Casagrand Moondance
-          <span className="mt-2 block text-xl font-semibold  ">
-             2 & 3 BHK Premium Apartments
-          </span> 
-        </h5>
-
-        {/* <p className="mt-5 max-w-2xl text-sm font-medium leading-7 text-zinc-200 sm:text-base md:text-lg md:leading-8">
-          A new launch residential community off Mysore Road, spread across
-          8.25 acres with 504 thoughtfully planned homes, low-rise B+G+4 wings,
-          landscaped open spaces, and lifestyle amenities.
-        </p> */}
-
-        
-      </div>
-
-      {/* Bottom Stats - Desktop */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 hidden border-t border-white/10 bg-black/65 px-8 py-7 backdrop-blur-xl lg:block">
-        <div className="mx-auto grid max-w-7xl grid-cols-4 gap-6">
-          {stats.map(({ icon: Icon, label, value }) => (
-            <div
-              key={label}
-              className="flex items-center gap-4 border-r border-white/10 last:border-r-0"
-            >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#BD9E5A]/15 text-[#BD9E5A]">
-                <Icon className="h-5 w-5" />
-              </div>
-
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[1.5px] text-zinc-400">
-                  {label}
-                </p>
-                <p className="mt-1 text-sm font-bold text-white xl:text-base">
-                  {value}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile Rotating Stat */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-white/10 bg-black/75 px-4 py-5 text-center text-white backdrop-blur-xl lg:hidden">
-        <div className="flex flex-col items-center">
-          <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#BD9E5A]/15 text-[#BD9E5A]">
-            <ActiveIcon className="h-6 w-6" />
-          </div>
-
-          <p className="text-[11px] font-bold uppercase tracking-[1.8px] text-zinc-400">
-            {stats[active].label}
-          </p>
-
-          <p className="mt-1 text-base font-extrabold leading-snug text-white sm:text-lg">
-            {stats[active].value}
-          </p>
-        </div>
-
-        {/* Dots */}
-        <div className="mt-4 flex justify-center gap-2">
-          {stats.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setActive(i)}
-              className={`h-2 rounded-full transition-all ${
-                active === i ? "w-6 bg-[#BD9E5A]" : "w-2 bg-white/35"
-              }`}
-              aria-label={`Show stat ${i + 1}`}
-            />
-          ))}
-        </div>
-      </div>
+     
     </section>
   );
 }

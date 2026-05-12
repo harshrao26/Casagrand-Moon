@@ -46,8 +46,42 @@ export default function ProjectGallery() {
           </p>
         </div>
 
-        {/* Gallery */}
-        <div className="flex h-[520px] flex-col overflow-hidden rounded-[28px] bg-black shadow-[0_24px_70px_rgba(0,0,0,0.18)] sm:h-[580px] md:h-[430px] md:flex-row lg:h-[500px]">
+        {/* Mobile Swipe Gallery */}
+        <div className="md:hidden">
+          <div className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {images.map((item, index) => (
+              <div
+                key={index}
+                className="relative h-[420px] min-w-[82%] snap-center overflow-hidden rounded-[26px] bg-black shadow-[0_18px_50px_rgba(0,0,0,0.18)]"
+              >
+                <img
+                  src={item.src}
+                  alt={item.label}
+                  className="h-full w-full object-cover"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <span className="mb-3 inline-flex rounded-full border border-white/20 bg-white/15 px-3 py-1 text-[10px] font-bold uppercase tracking-[1.5px] text-white backdrop-blur-md">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <p className="text-sm font-extrabold uppercase leading-6 tracking-[1.8px] text-white">
+                    {item.label}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-1 text-center text-[10px] font-bold uppercase tracking-[1.8px] text-black/40">
+            Swipe left or right to explore
+          </p>
+        </div>
+
+        {/* Desktop Gallery */}
+        <div className="hidden h-[520px] flex-col overflow-hidden rounded-[28px] bg-black shadow-[0_24px_70px_rgba(0,0,0,0.18)] sm:h-[580px] md:flex md:h-[430px] md:flex-row lg:h-[500px]">
           {images.map((item, index) => {
             const isActive = active === index;
 
@@ -56,7 +90,7 @@ export default function ProjectGallery() {
                 key={index}
                 onMouseEnter={() => setActive(index)}
                 onClick={() => setActive(index)}
-                className={`relative min-h-20px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out md:min-h-0 ${
+                className={`relative min-h-0 cursor-pointer overflow-hidden transition-all duration-500 ease-in-out ${
                   isActive ? "flex-[2.8]" : "flex-[1]"
                 }`}
               >
@@ -80,22 +114,20 @@ export default function ProjectGallery() {
 
                 {/* Label */}
                 <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-                  <p className="text-[11px] font-extrabold uppercase tracking-[1.8px] text-white sm:text-xs md:block hidden">
+                  <p className="hidden text-[11px] font-extrabold uppercase tracking-[1.8px] text-white sm:text-xs md:block">
                     {item.label}
                   </p>
-
-                  
                 </div>
-
-                {/* Number */}
-                
               </div>
             );
           })}
         </div>
 
         <div className="mt-8 flex justify-center">
-          <button onClick={openLeadForm} className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm">
+          <button
+            onClick={openLeadForm}
+            className="rounded-full bg-[#BD9E5A] px-7 py-3.5 text-xs font-extrabold uppercase tracking-[1.6px] text-white transition hover:bg-black hover:text-white md:px-9 md:py-4 md:text-sm"
+          >
             Download Brochure
           </button>
         </div>

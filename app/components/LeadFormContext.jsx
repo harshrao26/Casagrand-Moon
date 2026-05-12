@@ -5,6 +5,7 @@ import { Mail, Phone, Send, User, X, CalendarCheck, Loader2 } from "lucide-react
 import { useRouter } from "next/navigation";
 
 const LeadFormContext = createContext(null);
+const INDIAN_MOBILE_REGEX = /^[6-9]\d{9}$/;
 
 export const useLeadForm = () => {
   const context = useContext(LeadFormContext);
@@ -38,7 +39,7 @@ export const LeadFormFields = ({
   const updateField = (field, value) => {
     setFormData((prev) => ({
       ...prev,
-      [field]: value,
+      [field]: field === "phone" ? value.replace(/\D/g, "").slice(0, 10) : value,
     }));
   };
 
@@ -51,8 +52,15 @@ export const LeadFormFields = ({
       return;
     }
 
-    if (!formData.phone.trim()) {
+    const phone = formData.phone.trim();
+
+    if (!phone) {
       setError("Please enter your mobile number.");
+      return;
+    }
+
+    if (!INDIAN_MOBILE_REGEX.test(phone)) {
+      setError("Please enter a valid 10-digit Indian mobile number.");
       return;
     }
 
@@ -66,7 +74,7 @@ export const LeadFormFields = ({
     try {
       const payload = {
         name: formData.name,
-        phone: formData.phone,
+        phone,
         email: formData.email,
         source,
         pageUrl:
@@ -130,6 +138,9 @@ export const LeadFormFields = ({
           value={formData.phone}
           onChange={(e) => updateField("phone", e.target.value)}
           placeholder="Mobile Number"
+          inputMode="numeric"
+          maxLength={10}
+          pattern="[6-9][0-9]{9}"
           className="w-full rounded-2xl border border-zinc-200 bg-zinc-50 py-3.5 pl-12 pr-5 text-sm font-semibold text-zinc-950 outline-none transition placeholder:text-zinc-400 focus:border-[#BD9E5A] focus:bg-white focus:ring-4 focus:ring-[#BD9E5A]/15"
           required
         />

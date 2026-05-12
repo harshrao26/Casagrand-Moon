@@ -11,24 +11,31 @@ const About = () => {
 
         {/* Heading */}
         <h2 className="text-[26px] font-semibold leading-snug text-black sm:text-[32px] lg:text-[40px]">
-          2 & 3 BHK Premium Apartments in Off Mysore Road, 10mins from RR nagar, Bengaluru
+          Launching Casagrand Moondance — where living finds its rhythm again.
         </h2>
 
         {/* Paragraph 1 */}
         <p className="mt-6 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
-          Casagrand Moondance is a thoughtfully planned residential community in
-          Off Mysore Road, 10mins from RR nagar, Bengaluru. Designed for modern families,
-          the project offers premium 2 & 3 BHK apartments with elegant
-          layouts, landscaped open spaces, and a peaceful low-rise living
-          environment.
+          A thoughtfully planned low-rise residential community spread across
+          8.64 acres with just 504 premium homes, designed around light,
+          ventilation, greenery, privacy, and community living.
         </p>
 
         {/* Paragraph 2 */}
         <p className="mt-5 text-[15px] leading-relaxed text-black/80 sm:text-[16px]">
-          Spread across 8.64 acres with 504 premium homes across 3 residential
-          wings, Casagrand Moondance combines everyday comfort, smart planning,
-          lifestyle amenities, and strong connectivity to key parts of
-          Bengaluru through Mysore Road.
+          With super spacious 2 & 3 BHK apartments, expansive courtyards, 69+
+          amenities, a grand clubhouse and seamless connectivity off Mysore Road
+          near RR Nagar, Moondance brings back a calmer, more open way of
+          living.
+        </p>
+
+        {/* Closing Line */}
+        <p className="mt-7 text-[18px] font-semibold leading-relaxed text-black sm:text-[22px]">
+          Stop Adjusting. Start Living.
+          <br />
+          <span className="text-[#BD9E5A]">
+            Welcome Home to Casagrand Moondance
+          </span>
         </p>
       </div>
     </section>

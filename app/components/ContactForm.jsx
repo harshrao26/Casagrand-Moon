@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
 
+const INDIAN_MOBILE_REGEX = /^[6-9]\d{9}$/;
+
 export default function ContactForm() {
   const router = useRouter();
 
@@ -21,6 +23,19 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+
+    const phone = form.phone.trim();
+
+    if (!phone) {
+      setError("Please enter your mobile number.");
+      return;
+    }
+
+    if (!INDIAN_MOBILE_REGEX.test(phone)) {
+      setError("Please enter a valid 10-digit Indian mobile number.");
+      return;
+    }
+
     setStatus("loading");
 
     try {
@@ -29,7 +44,7 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
-          phone: form.phone,
+          phone,
           email: form.email,
           source: "Contact Form",
           pageUrl: typeof window !== "undefined" ? window.location.href : "",
@@ -106,9 +121,7 @@ export default function ContactForm() {
               className="w-full rounded-none bg-white px-3 py-2.5 text-sm text-black outline-none sm:w-[40%]"
             >
               <option>+91 (India)</option>
-              <option>+1 (USA)</option>
-              <option>+44 (UK)</option>
-              <option>+971 (UAE)</option>
+             
             </select>
 
             <input
@@ -116,8 +129,14 @@ export default function ContactForm() {
               placeholder="*Phone Number"
               value={form.phone}
               onChange={(e) =>
-                setForm((prev) => ({ ...prev, phone: e.target.value }))
+                setForm((prev) => ({
+                  ...prev,
+                  phone: e.target.value.replace(/\D/g, "").slice(0, 10),
+                }))
               }
+              inputMode="numeric"
+              maxLength={10}
+              pattern="[6-9][0-9]{9}"
               className="flex-1 rounded-none bg-white px-4 py-2.5 text-sm text-black outline-none placeholder:text-black/45"
               required
             />

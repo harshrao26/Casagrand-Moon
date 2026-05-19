@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: "/thank-you.html",
+        destination: "/thank-you",
+      },
+    ];
+  },
 };
 
 export default nextConfig;

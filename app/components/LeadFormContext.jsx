@@ -6,6 +6,31 @@ import { useRouter } from "next/navigation";
 
 const LeadFormContext = createContext(null);
 const INDIAN_MOBILE_REGEX = /^[6-9]\d{9}$/;
+const STATIC_HOSTS = ["casagrandmoondance.com", "www.casagrandmoondance.com"];
+const VERCEL_API_ORIGIN = "https://casagrand-moon.vercel.app";
+
+const getLeadApiUrl = () => {
+  if (
+    typeof window !== "undefined" &&
+    STATIC_HOSTS.includes(window.location.hostname)
+  ) {
+    return `${VERCEL_API_ORIGIN}/api/leads`;
+  }
+
+  return "/api/leads";
+};
+
+const goToThankYouPage = (router) => {
+  if (
+    typeof window !== "undefined" &&
+    STATIC_HOSTS.includes(window.location.hostname)
+  ) {
+    window.location.href = "/thank-you.html";
+    return;
+  }
+
+  router.push("/thank-you");
+};
 
 export const useLeadForm = () => {
   const context = useContext(LeadFormContext);
@@ -83,13 +108,19 @@ export const LeadFormFields = ({
         createdAt: new Date().toISOString(),
       };
 
-      await fetch("/api/leads", {
+      const response = await fetch(getLeadApiUrl(), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(payload),
       });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.ok) {
+        throw new Error(data.error || "Submission failed");
+      }
 
       setStatus("success");
 
@@ -102,7 +133,7 @@ export const LeadFormFields = ({
 
       onSuccess?.();
 
-      router.push("/thank-you");
+      goToThankYouPage(router);
     } catch (err) {
       setError("Something went wrong. Please try again.");
       setStatus("error");

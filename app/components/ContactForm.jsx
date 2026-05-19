@@ -5,6 +5,31 @@ import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
 
 const INDIAN_MOBILE_REGEX = /^[6-9]\d{9}$/;
+const STATIC_HOSTS = ["casagrandmoondance.com", "www.casagrandmoondance.com"];
+const VERCEL_API_ORIGIN = "https://casagrand-moon.vercel.app";
+
+const getLeadApiUrl = () => {
+  if (
+    typeof window !== "undefined" &&
+    STATIC_HOSTS.includes(window.location.hostname)
+  ) {
+    return `${VERCEL_API_ORIGIN}/api/leads`;
+  }
+
+  return "/api/leads";
+};
+
+const goToThankYouPage = (router) => {
+  if (
+    typeof window !== "undefined" &&
+    STATIC_HOSTS.includes(window.location.hostname)
+  ) {
+    window.location.href = "/thank-you.html";
+    return;
+  }
+
+  router.push("/thank-you");
+};
 
 export default function ContactForm() {
   const router = useRouter();
@@ -39,7 +64,7 @@ export default function ContactForm() {
     setStatus("loading");
 
     try {
-      const res = await fetch("/api/leads", {
+      const res = await fetch(getLeadApiUrl(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -59,7 +84,7 @@ export default function ContactForm() {
         throw new Error(data.error || "Submission failed");
       }
 
-      router.push("/thank-you");
+      goToThankYouPage(router);
     } catch (err) {
       setError("Something went wrong. Please try again.");
       setStatus("error");
